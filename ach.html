@@ -1,0 +1,329 @@
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="1.css">
+<div class="top">
+
+	<b class="col-md-2"style="font-size: 30px;color: yellow; ">TheArch</b>
+
+
+	<a href="#Home" class="col-md-2" style="color: white;font-size:  30px; ">Home </a>
+	<a href="#About" name="About" class="col-md-2" style="color: white;font-size:  30px;">About </a>
+	<a href="#Projects" name="Projects"class="col-md-2" style="color: white;font-size:  30px;">Projects </a>
+	<a href="#Team" name="Team"class="col-md-2" style="color: white;font-size:  30px;">Team </a>
+	<a href="#Contact" name="Contact"class="col-md-2" style="color: white;font-size:  30px;">Contact </a>
+	
+
+		
+ </div>
+ <script >
+document.getElementById("About").onclick = function() {
+  window.location = 'ach.html#About';
+  
+  document.getElementById("Projects").onclick = function() {
+  window.location = 'ach.html#Projects';
+  document.getElementById("Team").onclick = function() {
+  window.location = 'ach.html#Team';
+  document.getElementById("Contact").onclick = function() {
+  window.location = 'ach.html#Contact';
+};
+</script>
+ <div class="middle1">
+ 	<ul id="slides">
+    <li class="slide showing" ><img src="im8.jpg" style="position: absolute;height: 450%; width: 100%;" ><b style="color: white; position: relative; font-size: 400%; top: 125%; left: 22%;">
+    	FORENSIC ARCHITECTURE</b></li>
+    <li class="slide"><img src="im13.jpg" style="position: absolute; height: 450%; width: 100%;"><b style="color: white; position: relative; font-size: 400%; top: 125%; left: 18%;">
+    	EXPERT WITNESS TESTIMONY</b></li>
+    <li class="slide"><img src="im14.jpg" style="position: absolute;height: 450%; width: 100%;"><b style="color: white; position: relative; font-size: 400%; top: 125%; left: 25%;">
+    	QUALITY ASSURANCE</b></li>
+    <li class="slide"><img src="im15.jpg" style="position: absolute;height: 450%; width: 100%;"><b style="color: white; position: relative; font-size: 400%; top: 125%; left: 22%;">
+    	RECONSTRUCTION SERVICES</b></li>
+    <li class="slide"><img src="im16.jpg" style="position: absolute;height: 450%; width: 100%;"><b style="color: white; position: relative; font-size: 400%; top: 125%; left: 22%;">
+    	ARCHITECTURAL DESIGN</b></li>
+</ul>
+
+
+
+<style>
+	#slides{
+    position: relative;
+    height: 150px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.slide{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing{
+    opacity: 1;
+    z-index: 2;
+}
+
+
+
+/*
+non-essential styles:
+just for appearance; change whatever you want
+*/
+
+
+
+</style>
+<script type="text/javascript">
+	var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,2000);
+
+function nextSlide(){
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide+1)%slides.length;
+    slides[currentSlide].className = 'slide showing';
+}
+
+var playing = true;
+
+
+function playSlideshow(){
+    pauseButton.innerHTML = 'Pause';
+    playing = true;
+    slideInterval = setInterval(nextSlide,2000);
+}
+
+
+
+</script>
+
+<br>
+</div>
+<div class="middle3" id="About" style="background: grey;opacity: 0.9;">
+	<div class="head">
+<img src="im12.jpg" style="width: 100%; height: 100%;position: absolute;">
+
+	<b style="color: black;  font-size: 400%; left:43%; position: relative; margin-top: 5%;">ABOUT</b>
+	<p style="color:black;  font-size: 200%; left:0%; position: relative; margin-top: 4%; background-color: #B9BBB6">WE ARE TheArch GROUP ARCHITECTS, A FULL-SERVICE DESIGN AND CONSULTING FIRM SPECIALIZING IN FORENSIC ARCHITECTURE, QUALITY ASSURANCE, AND EXPERT WITNESS TESTIMONY.</p>
+	<button style="background-color: black; color: yellow; left:45%; position: relative; margin-top: 5%;text-decoration: none; font-size: 200%">Know More..<i class="fa fa-caret-down"></button>
+	<div id="div1" style="width:80px;height:80px;background-color:#B9BBB6; font-size: 200%;left:0%; position: relative; margin-top: 1%; width: 100%;">
+		<p style="color: black;">WE ENSURE SOUND DESIGN AND LEGAL COMPLIANCE THROUGHOUT A BUILDING'S LIFESPAN, FROM CRADLE TO GRAVE.</p>
+	</div>
+<br>
+<div id="div2" style="width:80px;height:80px;background-color:#B9BBB6;font-size: 200%;left:0%; position: relative; margin-top: 1%; width: 100%;">
+	<p style="color: black;">RECONSTRUCTION SERVICES OUT WITH THE OLD, IN WITH THE REFINED.</p>
+</div>
+<br>
+<div id="div3" style="width:80px;height:80px;background-color:#B9BBB6;font-size: 200%;left:0%; position: relative; margin-top: 1%; width: 100%;">
+	<p style="color: black;">ARCHITECTURAL DESIGN CLEAN AESTHETICS WITH PROVEN FUNCTION.</p>
+</div>
+
+</div>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeToggle();
+    $("#div2").fadeToggle("slow");
+    $("#div3").fadeToggle(3000);
+  });
+});
+</script>
+	</div>
+<br>
+
+
+<div class="project" id="Projects" style="position: relative;margin-top: 0%;">
+  <img src="C:\Users\DELL\Desktop\assignment\im9.jpg" style="width: 110%; height: 230%; position: absolute;margin-top: 0;">
+  <div class="text" style="position: relative;  left: 15%; padding-top: 15%;">
+    <a href="http://localhost:3700/" style="color: white; font-size:300%; top:40%; ">CLICK HERE TO VIEW LATEST PROJECTS</b>  
+  </div>
+</div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+	<div class="b" style="background-color: black; width:110%; position: relative; margin-top: 7%;" id="Team">
+<h1 style="background-color: black; color: white; text-align: center; text-decoration: none;">TEAM</h1>
+<p style="background-color: black; color: white; text-align: center;font-size: 30px; text-decoration: none;">Tap the image to know about them!</p>
+<div class="team1" style="display:flex; background: black; ">
+	<br>
+	<br>
+	<br>
+	<a href="team.html" class="button" type="button"  data-toggle="modal" data-target="#Modal1" style="border-radius: 50%; padding: 2.5%; opacity: 0.6;"><img src="Bhavya.jpg" class="img-circle" ></a>
+
+
+	<div class="modal fade" id="Modal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">BHAVYA JAIN</h4>
+        </div>
+        <div class="modal-body" style="background-color: black;" >
+          <p style="background-color: black; color: white;">She has over 40 years in the practice of traditional architectural, forensics and expert witness fields. Her extensive knowledge of these complementary fields assures clients they indeed are beneficiaries of accurate and well founded consulting services. She testimony spans over 200 depositions and trials for Plaintiffs and Defense clients. She is registered in 10 states and is a Licensed General Contractor in California.</p>
+          <a href="bhavya1.html" class="button" style="background-color: green; color: white;">Team Login!</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+	<a href="team.html" class="button" type="button"  data-toggle="modal" data-target="#Modal2"style="border-radius: 50%; padding: 2.5%;opacity: 0.6;"><img src="deepak.jpg" class="img-circle" ></a>
+
+
+	<div class="modal fade" id="Modal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">DEEPAK CHYAUNAL</h4>
+        </div>
+        <div class="modal-body" style="background-color: black;" >
+          <p style="background-color: black; color: white;">He has 30 licensed years of experience of forensic and traditional architecture, and expert witness services. With state licenses which include California, Colorado, Nevada and New York, Dale’s investigations range from multi-family developments to single-family homes, in addition to commercial and institutional projects. His analysis and reporting are accurate, thoroughly researched and support well-founded opinions. Deepak contributes valuable organizational and problem solving skills, with a specialty in construction methodologies and forensic architectural analysis to our practice.</p>
+          <a href="bhavya1.html" class="button" style="background-color: green; color: white;">Team Login!</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+	<a href="bhavya1.html" class="button" type="button"  data-toggle="modal" data-target="#Modal3" style="border-radius: 50%; padding: 2.5%;opacity: 0.6;"><img src="disha.jpg" class="img-circle" ></a>
+<div class="modal fade" id="Modal3" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">DISHA YADAV</h4>
+        </div>
+        <div class="modal-body" style="background-color: black;" >
+          <p style="background-color: black; color: white;">Disha’s experience spans over 28 years in the fields of construction and architecture. Her expertise includes the production of working drawings, construction administration, forensic site inspection and testing, and expert witness testimony. Her grasp of software solutions provides clients with a set of innovative and flexible tools for cost efficient and accurate analysis, communication and reporting—required in more complex matters. Disha’s breadth and depth of experience makes him a valuable resource for DGA clients.</p>
+          <a href="bhavya1.html" class="button" style="background-color: green; color: white;">Team Login!</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+	<a href="bhavya1.html" class="button" type="button"  data-toggle="modal" data-target="#Modal4"  style="border-radius: 50%; padding: 2.5%;opacity: 0.6;"><img src="akshit.jpg" class="img-circle" ></a>
+
+<div class="modal fade" id="Modal4" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">AKSHIT METHI</h4>
+        </div>
+        <div class="modal-body" style="background-color: black;" >
+          <p style="background-color: black; color: white;">He has over 10 years of experience in the field of traditional architecture, providing design project management and construction administration services for residential, commercial and educational projects. He has over 12 years of experience in forensic architecture, including forensic investigation, code and standards analysis, repair recommendations and coordination of reconstruction services. His research and organizational abilities provide detail and accuracy that suit DGA clients' needs.</p>
+          <a href="bhavya1.html" class="button" style="background-color: green; color: white;">Team Login!</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+	<a href="bhavya1.html" class="button" type="button"  data-toggle="modal" data-target="#Modal5"style="border-radius: 50%; padding: 2.5%;opacity: 0.6;"><img src="anadi.jpg" class="img-circle" ></a>
+
+<div class="modal fade" id="Modal5" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">ANADI PANDEY</h4>
+        </div>
+        <div class="modal-body" style="background-color: black;" >
+          <p style="background-color: black; color: white;">He has played a role the construction industry for over 24 years. In addition to his California and Arizona architectural licenses, Sean’s California contractor license and various manufacturer and industry certifications further validate his quality assurance tasks. His experience—which includes years of traditional architectural practice, forensic investigative consulting, waterproofing oversight and inspection services for DGA—makes him a valuable asset to any service or project he approaches.</p>
+          <a href="bhavya1.html" class="button" style="background-color: green; color: white;">Team Login!</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+ </div>
+  </div>
+
+<div class="contact-form" id="Contact" style="position: relative;margin-top: 20%;margin-bottom: 0%">
+  <form id="myform" name="myform">
+<h1>Contact Us</h1>
+<div class="text1">
+<label>Full Name:</label>
+<input style="color: black" type="text" name="" value="" placeholder="">
+</div>
+<div class="text1">
+<label>Email:</label>
+<input style="color: black" type="email" name="" value="" placeholder="">
+</div>
+<div class="text1">
+<label>Phone Number:</label>
+<input style="color: black" type="number" name="" value="" placeholder="">
+
+</div>
+<div class="text1">
+<label>Message</label>
+<textarea></textarea>
+</div>
+<a href="#" class="btn" onclick="resetform()" style="background-color: black">Send</a>
+</form>
+<script >
+  function resetform() {
+document.getElementById("myform").reset();
+}
+</script>
+</div>
+

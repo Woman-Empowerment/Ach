@@ -1,0 +1,33 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<div class="head">
+<img src="im11.jpg" style="width: 100%; height: 100%;position: absolute;">
+
+	<b style="color: black;  font-size: 400%; left:45%; position: relative; margin-top: 5%;">ABOUT</b>
+	<p style="color:black;  font-size: 200%; left:0%; position: relative; margin-top: 4%; background-color: #B9BBB6">WE ARE TheArch GROUP ARCHITECTS, A FULL-SERVICE DESIGN AND CONSULTING FIRM SPECIALIZING IN FORENSIC ARCHITECTURE, QUALITY ASSURANCE, AND EXPERT WITNESS TESTIMONY.</p>
+	<button style="background-color: black; color: yellow; left:45%; position: relative; margin-top: 5%;text-decoration: none; font-size: 200%">Know More..</button>
+	<div id="div1" style="width:80px;height:80px;background-color:black; font-size: 200%;left:0%; position: relative; margin-top: 1%; width: 100%;">
+		<p style="color: white;">WE ENSURE SOUND DESIGN AND LEGAL COMPLIANCE THROUGHOUT A BUILDING'S LIFESPAN, FROM CRADLE TO GRAVE.</p>
+	</div>
+<br>
+<div id="div2" style="width:80px;height:80px;background-color:black;font-size: 200%;left:0%; position: relative; margin-top: 1%; width: 100%;">
+	<p style="color: white;">RECONSTRUCTION SERVICES OUT WITH THE OLD, IN WITH THE REFINED.</p>
+</div>
+<br>
+<div id="div3" style="width:80px;height:80px;background-color:black;font-size: 200%;left:0%; position: relative; margin-top: 1%; width: 100%;">
+	<p style="color: white;">ARCHITECTURAL DESIGN CLEAN AESTHETICS WITH PROVEN FUNCTION.</p>
+</div>
+
+</div>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeToggle();
+    $("#div2").fadeToggle("slow");
+    $("#div3").fadeToggle(3000);
+  });
+});
+</script>
