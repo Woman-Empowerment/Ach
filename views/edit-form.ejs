@@ -1,0 +1,33 @@
+<%
+let b=a[0];
+
+
+%>
+<form method="post" action="/update">
+	<input type="hidden" name="id" value="<%=b.id%>">
+	<p>
+		name
+		<input name="name" value="<%=b.name%>">
+	</p>`
+	<p>
+		email
+		<input name="email" value="<%=b.email%>">
+	</p>
+	<p>
+		s1
+		<input name="contact" value="<%=b.contact%>">
+	</p>
+	<p>
+		s2
+		<input name="username" value="<%=b.username%>">
+	</p>
+	<p>
+		s3
+		<input name="password" value="<%=b.password%>">
+	</p>
+
+	
+	<p>
+		<button>Update</button>
+	</p>
+</form>
